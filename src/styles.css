@@ -5,11 +5,13 @@
   }
   
   html, body {
+    
     background: white;
     margin: 20px;
     color: #3e4144;
     -webkit-font-smoothing: antialiased;
   }
+  
   
   dd {
     font-weight: bold;
@@ -38,16 +40,18 @@
     padding: 1px;
   }
 
-  .row {
-    display:flex;
+  /* ********************************* */
+
+  .row{
+    display: flex;
   }
 
-  .col {
+  .col{
     flex-grow: 1;
     margin-right: 10px;
   }
 
-  input {
+  input{
     display: block;
     margin: 5px;
   }
