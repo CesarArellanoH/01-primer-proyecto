@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-heroes',
+    selector: 'app-heroe',
     templateUrl: './heroe.component.html'
+    
 })
-export class HeroesComponent {
-    nombre: String = 'Aquaman'
+export class HeroeComponent  {
+    
+    nombre: string = 'Aquaman';
     edad: number = 500;
 
     
@@ -13,17 +15,21 @@ export class HeroesComponent {
         return this.nombre.toUpperCase();
     }
     
+
     obtenerNombre(): string {
-        let nombre:string = 'Batman';
-        return `${this.nombre}  ${this.edad}`
+        let nombre: String = 'Batman';
+        return `${this.nombre} - ${this.edad}`;
     }
 
     cambiarNombre() {
-        this.nombre = 'Spiderman'
+        this.nombre = 'Superman';
+        console.log(this.nombre);
+        
     }
 
     cambiarEdad() {
-        this.edad = 50;
+        this.edad = 100;
+        console.log(this.edad);
+        
     }
-
 }
